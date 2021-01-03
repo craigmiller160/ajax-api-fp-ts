@@ -8,5 +8,11 @@
   },
   "dependencies": {
     "@craigmiller160/react-web-config": "file:.yalc/@craigmiller160/react-web-config"
+  },
+  "peerDependencies": {
+    "fp-ts": "^2.9.3"
+  },
+  "devDependencies": {
+    "fp-ts": "^2.9.3"
   }
 }
