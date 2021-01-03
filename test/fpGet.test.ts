@@ -1,11 +1,39 @@
 import MockAdapter from 'axios-mock-adapter';
+import { createApi } from '../src';
+import { pipe } from 'fp-ts/es6/pipeable';
+import * as TE from 'fp-ts/es6/TaskEither';
+import { AxiosError } from 'axios';
+
+const uri = '/foo/bar';
 
 describe('fpGet', () => {
     it('request success', () => {
-        throw new Error();
+        const api = createApi();
+        const mockApi = new MockAdapter(api.instance);
+        mockApi.onGet(uri)
+            .reply(200, 'Success');
+
+        return pipe(
+            api.get<string>({
+                uri
+            }),
+            TE.map((res) => expect(res.data).toEqual('Success')),
+            TE.mapLeft((ex) => expect(ex).toBeUndefined())
+        )();
     });
 
     it('request error', () => {
-        throw new Error();
+        const api = createApi();
+        new MockAdapter(api.instance);
+
+        return pipe(
+            api.get<string>({
+                uri
+            }),
+            TE.map((res) => expect(res).toBeUndefined()),
+            TE.mapLeft((ex: Error) => {
+                expect((ex as AxiosError).response?.status).toEqual(404);
+            })
+        )();
     });
 });
