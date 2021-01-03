@@ -1,0 +1,9 @@
+{
+  "name": "@craigmiller160/ajax-api-fp-ts",
+  "version": "1.0.0-beta",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "@craigmiller160/react-web-config": "file:.yalc/@craigmiller160/react-web-config"
+  }
+}
