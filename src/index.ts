@@ -4,6 +4,7 @@ import { FpAjaxApi } from './types';
 import { fpPost } from './methods/fpPost';
 import { fpPut } from './methods/fpPut';
 import { fpDelete } from './methods/fpDelete';
+import { fpGraphql } from './methods/fpGraphql';
 
 export const createApi = (config?: ApiConfig): FpAjaxApi => {
     const api = createBaseApi(config);
@@ -12,6 +13,7 @@ export const createApi = (config?: ApiConfig): FpAjaxApi => {
         get: fpGet(api),
         post: fpPost(api),
         put: fpPut(api),
-        delete: fpDelete(api)
+        delete: fpDelete(api),
+        graphql: fpGraphql(api)
     };
 };
