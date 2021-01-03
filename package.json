@@ -3,6 +3,9 @@
   "version": "1.0.0-beta",
   "main": "index.js",
   "license": "MIT",
+  "scripts": {
+    "init": "web-config-scripts init"
+  },
   "dependencies": {
     "@craigmiller160/react-web-config": "file:.yalc/@craigmiller160/react-web-config"
   }
