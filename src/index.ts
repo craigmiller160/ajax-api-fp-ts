@@ -1,10 +1,11 @@
 import { ApiConfig, createApi as createBaseApi } from '@craigmiller160/ajax-api';
 import { fpGet } from './methods/fpGet';
+import { FpAjaxApi } from './types';
 
-// TODO needs response type
-const createApi = (config?: ApiConfig) => {
+export const createApi = (config?: ApiConfig): FpAjaxApi => {
     const api = createBaseApi(config);
     return {
+        instance: api.instance,
         get: fpGet(api)
     }
 };
