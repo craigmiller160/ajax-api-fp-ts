@@ -4,7 +4,10 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "init": "web-config-scripts init"
+    "lint": "web-config-scripts lint",
+    "test": "web-config-scripts test",
+    "build": "web-config-scripts lint && web-config-scripts test && web-config-scripts buildTSLib",
+    "forceBuild": "web-config-scripts buildTSLib"
   },
   "dependencies": {
     "@craigmiller160/ajax-api": "file:.yalc/@craigmiller160/ajax-api",
