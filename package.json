@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "@craigmiller160/ajax-api": "file:.yalc/@craigmiller160/ajax-api",
+    "@craigmiller160/jest-matchers-common": "file:.yalc/@craigmiller160/jest-matchers-common",
     "@craigmiller160/react-web-config": "file:.yalc/@craigmiller160/react-web-config"
   },
   "peerDependencies": {
