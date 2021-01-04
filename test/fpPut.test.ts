@@ -29,7 +29,7 @@ describe('fpPut', () => {
 
     it('request error', () => {
         const api = createApi();
-        new MockAdapter(api.instance);
+        new MockAdapter(api.instance); // eslint-disable-line no-new
 
         return pipe(
             api.put<BodyType, string>({
