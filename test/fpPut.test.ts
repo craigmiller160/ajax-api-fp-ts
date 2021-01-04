@@ -1,8 +1,8 @@
 import MockAdapter from 'axios-mock-adapter';
-import { createApi } from '../src';
 import { pipe } from 'fp-ts/es6/pipeable';
 import * as TE from 'fp-ts/es6/TaskEither';
 import { AxiosError } from 'axios';
+import { createApi } from '../src';
 
 const uri = '/foo/bar';
 const body = {
@@ -18,7 +18,7 @@ describe('fpPut', () => {
             .reply(200, 'Success');
 
         return pipe(
-            api.put<BodyType,string>({
+            api.put<BodyType, string>({
                 uri,
                 body
             }),
@@ -32,7 +32,7 @@ describe('fpPut', () => {
         new MockAdapter(api.instance);
 
         return pipe(
-            api.put<BodyType,string>({
+            api.put<BodyType, string>({
                 uri,
                 body
             }),

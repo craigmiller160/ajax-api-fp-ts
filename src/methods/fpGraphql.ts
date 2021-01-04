@@ -5,7 +5,7 @@ import { handleTEReason } from '../utils/handleTEReason';
 
 export const fpGraphql = (api: AjaxApi) =>
     <R>(req: GraphQLRequestConfig) =>
-        TE.tryCatch<Error,AxiosResponse<GraphQLQueryResponse<R>>>(
+        TE.tryCatch<Error, AxiosResponse<GraphQLQueryResponse<R>>>(
             () => api.graphql<R>(req),
             (reason: unknown) => handleTEReason(reason)
         );

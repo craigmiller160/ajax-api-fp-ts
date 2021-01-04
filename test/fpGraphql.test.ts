@@ -1,10 +1,10 @@
 import MockAdapter from 'axios-mock-adapter';
-import { createApi } from '../src';
 import { pipe } from 'fp-ts/es6/pipeable';
 import * as TE from 'fp-ts/es6/TaskEither';
 import { AxiosError } from 'axios';
 import { mockAndValidateGraphQL } from '@craigmiller160/ajax-api/lib/test-utils';
 import { GraphQLError } from '@craigmiller160/ajax-api';
+import { createApi } from '../src';
 
 const payload = `
     query {
@@ -38,7 +38,7 @@ describe('fpGraphql', () => {
 
     it('request error', () => {
         const api = createApi();
-        new MockAdapter(api.instance);
+        new MockAdapter(api.instance); // eslint-disable-line no-new
 
         return pipe(
             api.graphql<string>({

@@ -4,8 +4,8 @@ import { AxiosResponse } from 'axios';
 import { handleTEReason } from '../utils/handleTEReason';
 
 export const fpPut = (api: AjaxApi) =>
-    <B,R>(req: UriBodyRequestConfig<B>): TE.TaskEither<Error, AxiosResponse<R>> =>
-        TE.tryCatch<Error,AxiosResponse<R>>(
-            () => api.put<B,R>(req),
+    <B, R>(req: UriBodyRequestConfig<B>): TE.TaskEither<Error, AxiosResponse<R>> =>
+        TE.tryCatch<Error, AxiosResponse<R>>(
+            () => api.put<B, R>(req),
             (reason: unknown) => handleTEReason(reason)
         );
