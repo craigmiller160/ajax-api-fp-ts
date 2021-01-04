@@ -4,6 +4,7 @@ import { pipe } from 'fp-ts/es6/pipeable';
 import * as TE from 'fp-ts/es6/TaskEither';
 import { AxiosError } from 'axios';
 import { mockAndValidateGraphQL } from '@craigmiller160/ajax-api/lib/test-utils';
+import { GraphQLError } from '@craigmiller160/ajax-api';
 
 const payload = `
     query {
@@ -51,6 +52,35 @@ describe('fpGraphql', () => {
     });
 
     it('request graphql error', () => {
-        throw new Error();
+        const api = createApi();
+        const mockApi = new MockAdapter(api.instance);
+        mockAndValidateGraphQL({
+            mockApi,
+            payload,
+            responseData: {
+                data: null,
+                errors: [
+                    {
+                        message: 'This is an error'
+                    },
+                    {
+                        message: 'Error 2'
+                    }
+                ]
+            }
+        });
+
+        return pipe(
+            api.graphql<string>({
+                payload
+            }),
+            TE.map((res) => expect(res).toBeUndefined()),
+            TE.mapLeft((ex: Error) => {
+                expect(ex).toBeInstanceOf(GraphQLError);
+                const graphError = ex as GraphQLError;
+                expect(graphError.message).toEqual('This is an error\nError 2');
+                expect(graphError.response.status).toEqual(200);
+            })
+        )();
     });
 });
