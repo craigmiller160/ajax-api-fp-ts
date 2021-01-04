@@ -1,8 +1,13 @@
 {
   "name": "@craigmiller160/ajax-api-fp-ts",
   "version": "1.0.0-beta",
-  "main": "index.js",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
   "license": "MIT",
+  "files": [
+    "lib",
+    ".yalc"
+  ],
   "scripts": {
     "lint": "web-config-scripts lint",
     "test": "web-config-scripts test",
