@@ -15,14 +15,14 @@
     "forceBuild": "web-config-scripts buildTSLib"
   },
   "dependencies": {
-    "@craigmiller160/ajax-api": "file:.yalc/@craigmiller160/ajax-api",
-    "@craigmiller160/jest-matchers-common": "file:.yalc/@craigmiller160/jest-matchers-common",
-    "@craigmiller160/react-web-config": "file:.yalc/@craigmiller160/react-web-config"
+    "@craigmiller160/ajax-api": "^1.1.0"
   },
   "peerDependencies": {
     "fp-ts": "^2.9.3"
   },
   "devDependencies": {
+    "@craigmiller160/jest-matchers-common": "^1.0.0",
+    "@craigmiller160/react-web-config": "^2.7.0",
     "axios-mock-adapter": "^1.19.0",
     "fp-ts": "^2.9.3",
     "react": "^16.14.0",
