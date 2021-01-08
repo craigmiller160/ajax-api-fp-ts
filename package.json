@@ -1,6 +1,6 @@
 {
   "name": "@craigmiller160/ajax-api-fp-ts",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "license": "MIT",
@@ -15,7 +15,7 @@
     "forceBuild": "web-config-scripts buildTSLib"
   },
   "dependencies": {
-    "@craigmiller160/ajax-api": "^1.1.0"
+    "@craigmiller160/ajax-api": "^1.1.1"
   },
   "peerDependencies": {
     "fp-ts": "^2.9.3"
