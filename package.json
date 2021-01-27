@@ -3,7 +3,11 @@
   "version": "1.0.1",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
-  "license": "MIT",
+  "publishConfig": {
+    "registry": "http://craigpc:30003/repository/npm-private/"
+  },
+  "author": "craigmiller160",
+  "license": "GPLv3",
   "files": [
     "lib",
     ".yalc"
@@ -15,14 +19,14 @@
     "forceBuild": "web-config-scripts buildTSLib"
   },
   "dependencies": {
-    "@craigmiller160/ajax-api": "^1.1.1"
+    "@craigmiller160/ajax-api": "^1.1.2"
   },
   "peerDependencies": {
     "fp-ts": "^2.9.3"
   },
   "devDependencies": {
-    "@craigmiller160/jest-matchers-common": "^1.0.0",
-    "@craigmiller160/react-web-config": "^2.7.0",
+    "@craigmiller160/jest-matchers-common": "^1.0.1",
+    "@craigmiller160/react-web-config": "^2.8.1",
     "axios-mock-adapter": "^1.19.0",
     "fp-ts": "^2.9.3",
     "react": "^16.14.0",
