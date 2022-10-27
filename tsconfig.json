@@ -21,13 +21,13 @@
     "module": "es2015"
   },
   "include": [
-    "/home/craig/Development/Libraries/ajax-api-fp-ts/src/**/*",
-    "/home/craig/Development/Libraries/ajax-api-fp-ts/test/**/*"
+    "/Users/craigmiller/Development/Libraries/ajax-api-fp-ts/src/**/*",
+    "/Users/craigmiller/Development/Libraries/ajax-api-fp-ts/test/**/*"
   ],
   "exclude": [
-    "/home/craig/Development/Libraries/ajax-api-fp-ts/node_modules",
-    "/home/craig/Development/Libraries/ajax-api-fp-ts/lib",
-    "/home/craig/Development/Libraries/ajax-api-fp-ts/build",
-    "/home/craig/Development/Libraries/ajax-api-fp-ts/.yalc"
+    "/Users/craigmiller/Development/Libraries/ajax-api-fp-ts/node_modules",
+    "/Users/craigmiller/Development/Libraries/ajax-api-fp-ts/lib",
+    "/Users/craigmiller/Development/Libraries/ajax-api-fp-ts/build",
+    "/Users/craigmiller/Development/Libraries/ajax-api-fp-ts/.yalc"
   ]
 }
