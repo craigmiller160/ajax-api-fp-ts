@@ -5,10 +5,10 @@ import { handleTEReason } from '../utils/handleTEReason';
 
 export const fpPost =
 	(api: AjaxApi) =>
-	<B, R>(
+	<R, B>(
 		req: UriBodyRequestConfig<B>
 	): TE.TaskEither<Error, AxiosResponse<R>> =>
 		TE.tryCatch<Error, AxiosResponse<R>>(
-			() => api.post<B, R>(req),
+			() => api.post<R, B>(req),
 			(reason: unknown) => handleTEReason(reason)
 		);
