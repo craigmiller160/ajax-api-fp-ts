@@ -14,8 +14,8 @@
   ],
   "scripts": {
     "lint": "eslint --fix --max-warnings=0 '{src,test}/**/*.ts'",
-    "test": "web-config-scripts test",
-    "build": "web-config-scripts lint && web-config-scripts test && web-config-scripts buildTSLib",
+    "test": "craig-test",
+    "build": "yarn lint && yarn test && yarn forceBuild",
     "forceBuild": "tsc",
     "prepare": "husky install"
   },
