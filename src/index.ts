@@ -1,4 +1,5 @@
 import {
+	AjaxApi,
 	ApiConfig,
 	createApi as createBaseApi
 } from '@craigmiller160/ajax-api';
@@ -18,12 +19,14 @@ export {
 
 export const createApi = (config?: ApiConfig): FpAjaxApi => {
 	const api = createBaseApi(config);
-	return {
-		instance: api.instance,
-		get: fpGet(api),
-		post: fpPost(api),
-		put: fpPut(api),
-		delete: fpDelete(api),
-		graphql: fpGraphql(api)
-	};
+	return wrapApi(api);
 };
+
+export const wrapApi = (api: AjaxApi): FpAjaxApi => ({
+	instance: api.instance,
+	get: fpGet(api),
+	post: fpPost(api),
+	put: fpPut(api),
+	delete: fpDelete(api),
+	graphql: fpGraphql(api)
+});
