@@ -1,6 +1,7 @@
 import {
-    ApiConfig,
-    createApi as createBaseApi
+	AjaxApi,
+	ApiConfig,
+	createApi as createBaseApi
 } from '@craigmiller160/ajax-api';
 import { fpGet } from './methods/fpGet';
 import { FpAjaxApi } from './types';
@@ -11,19 +12,21 @@ import { fpGraphql } from './methods/fpGraphql';
 
 export * from '@craigmiller160/ajax-api/lib/types';
 export {
-    isAxiosError,
-    GraphQLError,
-    CsrfError
+	isAxiosError,
+	GraphQLError,
+	CsrfError
 } from '@craigmiller160/ajax-api';
 
 export const createApi = (config?: ApiConfig): FpAjaxApi => {
-    const api = createBaseApi(config);
-    return {
-        instance: api.instance,
-        get: fpGet(api),
-        post: fpPost(api),
-        put: fpPut(api),
-        delete: fpDelete(api),
-        graphql: fpGraphql(api)
-    };
+	const api = createBaseApi(config);
+	return wrapApi(api);
 };
+
+export const wrapApi = (api: AjaxApi): FpAjaxApi => ({
+	instance: api.instance,
+	get: fpGet(api),
+	post: fpPost(api),
+	put: fpPut(api),
+	delete: fpDelete(api),
+	graphql: fpGraphql(api)
+});
