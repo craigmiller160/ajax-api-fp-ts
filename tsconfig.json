@@ -1,7 +1,6 @@
 {
-  "version": 3,
   "compilerOptions": {
-    "target": "es5",
+    "target": "es2022",
     "lib": [
       "dom",
       "dom.iterable",
@@ -18,16 +17,16 @@
     "isolatedModules": true,
     "jsx": "react",
     "declaration": false,
-    "module": "es2015"
+    "module": "es2015",
+    "outDir": "./lib"
   },
   "include": [
-    "/Users/craigmiller/Development/Libraries/ajax-api-fp-ts/src/**/*",
-    "/Users/craigmiller/Development/Libraries/ajax-api-fp-ts/test/**/*"
+    "src/**/*",
+    "test/**/*"
   ],
   "exclude": [
-    "/Users/craigmiller/Development/Libraries/ajax-api-fp-ts/node_modules",
-    "/Users/craigmiller/Development/Libraries/ajax-api-fp-ts/lib",
-    "/Users/craigmiller/Development/Libraries/ajax-api-fp-ts/build",
-    "/Users/craigmiller/Development/Libraries/ajax-api-fp-ts/.yalc"
+    "node_modules",
+    "lib",
+    ".yalc"
   ]
 }
