@@ -16,7 +16,7 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "jsx": "react",
-    "declaration": false,
+    "declaration": true,
     "module": "es2015",
     "outDir": "./lib"
   },
