@@ -17,7 +17,7 @@ describe('fpPost', () => {
 		mockApi.onPost(uri, body).reply(200, 'Success');
 
 		return pipe(
-			api.post<BodyType, string>({
+			api.post<string, BodyType>({
 				uri,
 				body
 			}),
@@ -31,7 +31,7 @@ describe('fpPost', () => {
 		new MockAdapter(api.instance); // eslint-disable-line no-new
 
 		return pipe(
-			api.post<BodyType, string>({
+			api.post<string, BodyType>({
 				uri,
 				body
 			}),
