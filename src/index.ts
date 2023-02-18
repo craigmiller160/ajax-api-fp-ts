@@ -11,11 +11,13 @@ import { fpDelete } from './methods/fpDelete';
 import { fpGraphql } from './methods/fpGraphql';
 
 export * from '@craigmiller160/ajax-api/lib/types';
+export { BEARER_TOKEN_KEY } from '@craigmiller160/ajax-api';
 export {
 	isAxiosError,
 	GraphQLError,
 	CsrfError
 } from '@craigmiller160/ajax-api';
+export { createBaseApi };
 
 export const createApi = (config?: ApiConfig): FpAjaxApi => {
 	const api = createBaseApi(config);
