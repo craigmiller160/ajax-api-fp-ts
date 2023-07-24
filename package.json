@@ -13,14 +13,14 @@
     ".yalc"
   ],
   "scripts": {
-    "lint": "eslint --fix --max-warnings=0 '{src,test}/**/*.ts'",
+    "lint": "craig-lint",
     "test": "craig-test",
-    "build": "yarn lint && yarn test && yarn forceBuild",
-    "forceBuild": "rm -rf ./lib && tsc",
+    "build": "npm run lint && npm run test && npm run forceBuild",
+    "forceBuild": "rm -rf ./lib && craig-multi-module && tsc --declaration --emitDeclarationOnly --outDir ./lib/types",
     "prepare": "husky install"
   },
   "lint-staged": {
-    "*.ts": "eslint --fix --max-warnings=0"
+    "*.ts": "craig-lint"
   },
   "dependencies": {
     "@craigmiller160/ajax-api": "2.2.0-beta.2",
