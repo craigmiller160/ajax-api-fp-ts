@@ -5,7 +5,7 @@ import {
 	UriBodyRequestConfig,
 	UriRequestConfig
 } from '@craigmiller160/ajax-api';
-import { TaskEither } from 'fp-ts/es6/TaskEither';
+import { TaskEither } from 'fp-ts/TaskEither';
 
 export interface FpAjaxApi {
 	instance: AxiosInstance;

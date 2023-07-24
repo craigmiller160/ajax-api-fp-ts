@@ -1,4 +1,4 @@
-import * as TE from 'fp-ts/es6/TaskEither';
+import * as TE from 'fp-ts/TaskEither';
 import {
 	AjaxApi,
 	GraphQLQueryResponse,

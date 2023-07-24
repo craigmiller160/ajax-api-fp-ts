@@ -1,6 +1,6 @@
 import MockAdapter from 'axios-mock-adapter';
-import { pipe } from 'fp-ts/es6/pipeable';
-import * as TE from 'fp-ts/es6/TaskEither';
+import { pipe } from 'fp-ts/pipeable';
+import * as TE from 'fp-ts/TaskEither';
 import { AxiosError } from 'axios';
 import { createApi } from '../src';
 

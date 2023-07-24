@@ -1,4 +1,4 @@
-import * as TE from 'fp-ts/es6/TaskEither';
+import * as TE from 'fp-ts/TaskEither';
 import { AjaxApi, UriRequestConfig } from '@craigmiller160/ajax-api';
 import { AxiosResponse } from 'axios';
 import { handleTEReason } from '../utils/handleTEReason';
