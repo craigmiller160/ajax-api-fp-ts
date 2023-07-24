@@ -30,7 +30,7 @@
   "peerDependencies": {
     "axios": "^1.4.0",
     "fp-ts": "^2.9.3",
-    "@craigmiller160/ajax-api": "^2.2.0"
+    "@craigmiller160/ajax-api": "^2.2.0-beta"
   },
   "pnpm": {
     "peerDependencyRules": {
