@@ -23,7 +23,7 @@
     "*.ts": "craig-lint"
   },
   "dependencies": {
-    "@craigmiller160/ajax-api": "2.2.0-beta.6",
+    "@craigmiller160/ajax-api": "2.2.0-beta.7",
     "axios": "^1.4.0"
   },
   "peerDependencies": {

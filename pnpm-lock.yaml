@@ -6,8 +6,8 @@ settings:
 
 dependencies:
   '@craigmiller160/ajax-api':
-    specifier: 2.2.0-beta.6
-    version: 2.2.0-beta.6(axios@1.4.0)
+    specifier: 2.2.0-beta.7
+    version: 2.2.0-beta.7(axios@1.4.0)
   axios:
     specifier: ^1.4.0
     version: 1.4.0
@@ -1272,8 +1272,8 @@ packages:
     resolution: {integrity: sha512-0hYQ8SB4Db5zvZB4axdMHGwEaQjkZzFjQiN9LVYvIFB2nSUHW9tYpxWriPrWDASIxiaXax83REcLxuSdnGPZtw==}
     dev: true
 
-  /@craigmiller160/ajax-api@2.2.0-beta.6(axios@1.4.0):
-    resolution: {integrity: sha512-CkTUF2UYkkQGF56zfuPCLAxeRDBbB+Z7iHL72R6V2lFWtbSVW7FeRhwZsex+iNOnYqWdjF52aasIeMxfhiBxUw==}
+  /@craigmiller160/ajax-api@2.2.0-beta.7(axios@1.4.0):
+    resolution: {integrity: sha512-rM1VTkrxDUt2fIE7HPrHk+lB9j9pahR1pMRqHlBPjUTQYqdQDLFgUzbumA92KzPcnAmtY5gleA0YjkH2VD9Opg==}
     peerDependencies:
       axios: ^1.4.0
     dependencies:
