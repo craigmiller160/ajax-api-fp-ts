@@ -27,7 +27,8 @@
     "axios": "^1.4.0"
   },
   "peerDependencies": {
-    "fp-ts": "^2.9.3"
+    "fp-ts": "^2.9.3",
+    "axios": "^1.4.0"
   },
   "pnpm": {
     "peerDependencyRules": {
