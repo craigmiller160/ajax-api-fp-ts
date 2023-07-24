@@ -10,7 +10,7 @@ import { fpPut } from './methods/fpPut';
 import { fpDelete } from './methods/fpDelete';
 import { fpGraphql } from './methods/fpGraphql';
 
-export * from '@craigmiller160/ajax-api/lib/types';
+export type * from '@craigmiller160/ajax-api';
 export { BEARER_TOKEN_KEY } from '@craigmiller160/ajax-api';
 export {
 	isAxiosError,
