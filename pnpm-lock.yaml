@@ -6,8 +6,11 @@ settings:
 
 dependencies:
   '@craigmiller160/ajax-api':
-    specifier: ^2.2.0-beta
-    version: 2.2.0-beta.1
+    specifier: 2.2.0-beta.2
+    version: 2.2.0-beta.2(axios@1.4.0)
+  axios:
+    specifier: ^1.4.0
+    version: 1.4.0
 
 devDependencies:
   '@craigmiller160/babel-config':
@@ -1260,12 +1263,12 @@ packages:
     resolution: {integrity: sha512-0hYQ8SB4Db5zvZB4axdMHGwEaQjkZzFjQiN9LVYvIFB2nSUHW9tYpxWriPrWDASIxiaXax83REcLxuSdnGPZtw==}
     dev: true
 
-  /@craigmiller160/ajax-api@2.2.0-beta.1:
-    resolution: {integrity: sha512-+cMGhpOieQwojcOKTL4QZxKir9evvDsi9OQ0G7onPubdUO472ZqIqGx0tAasOSux/fSxGEsSirQ3mLo0YUNunw==}
+  /@craigmiller160/ajax-api@2.2.0-beta.2(axios@1.4.0):
+    resolution: {integrity: sha512-MKXxNP86OIGZVFmGoa94QSdeeY/P+Bx8oaae9zwf37MUWLcQixjFS6fg7rnInD2UVG3sCv6BCaCE1And7UD+ag==}
+    peerDependencies:
+      axios: ^1.4.0
     dependencies:
       axios: 1.4.0
-    transitivePeerDependencies:
-      - debug
     dev: false
 
   /@craigmiller160/babel-config@1.1.1:
