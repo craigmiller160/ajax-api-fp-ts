@@ -38,8 +38,8 @@ devDependencies:
     specifier: ^1.0.2
     version: 1.0.2
   '@craigmiller160/swc-config':
-    specifier: 1.0.0-beta.8
-    version: 1.0.0-beta.8(@swc/cli@0.1.62)
+    specifier: 1.0.0-beta.9
+    version: 1.0.0-beta.9(@swc/cli@0.1.62)
   axios-mock-adapter:
     specifier: ^1.21.5
     version: 1.21.5(axios@1.4.0)
@@ -1380,8 +1380,8 @@ packages:
       prettier: 2.8.8
     dev: true
 
-  /@craigmiller160/swc-config@1.0.0-beta.8(@swc/cli@0.1.62):
-    resolution: {integrity: sha512-FI+H9fJwmsquJvMaKUc8SV3a0dnSxjLx3+8zf4/tfqr4a+YGiCXsUF7jD6i+Wg3bYV8Za5iCzSIzneuFFjkKbA==}
+  /@craigmiller160/swc-config@1.0.0-beta.9(@swc/cli@0.1.62):
+    resolution: {integrity: sha512-ZpEOPUhHLgBjfIwd8+9pFFbg95DEcpHnJ5UzZ+EuIbQmkgjkR0QL2Fxu5S1T++rr3ttP+N37siLS5j7Bml1xOw==}
     hasBin: true
     peerDependencies:
       '@swc/cli': ^0.1.62
