@@ -2,7 +2,7 @@ import MockAdapter from 'axios-mock-adapter';
 import { pipe } from 'fp-ts/pipeable';
 import * as TE from 'fp-ts/TaskEither';
 import { AxiosError } from 'axios';
-import { mockAndValidateGraphQL } from '@craigmiller160/ajax-api';
+import { mockAndValidateGraphQL } from '@craigmiller160/ajax-api/test-utils';
 import { GraphQLError } from '@craigmiller160/ajax-api';
 import { createApi } from '../src';
 
