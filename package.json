@@ -34,14 +34,15 @@
     "axios": "^1.4.0"
   },
   "peerDependencies": {
+    "@craigmiller160/ajax-api": "2.2.1",
     "axios": "^1.4.0",
-    "fp-ts": "^2.9.3",
-    "@craigmiller160/ajax-api": "2.2.1"
+    "fp-ts": "^2.9.3"
   },
   "devDependencies": {
+    "@craigmiller160/js-config": "1.0.14",
     "axios-mock-adapter": "^1.21.5",
     "cross-env": "^7.0.3",
     "fp-ts": "^2.16.1",
-    "@craigmiller160/js-config": "1.0.14"
+    "vitest": "^0.34.3"
   }
 }
