@@ -1,5 +1,6 @@
+import { describe, it, expect } from 'vitest';
 import MockAdapter from 'axios-mock-adapter';
-import { pipe } from 'fp-ts/pipeable';
+import { pipe } from 'fp-ts/function';
 import * as TE from 'fp-ts/TaskEither';
 import { AxiosError } from 'axios';
 import { mockAndValidateGraphQL } from '@craigmiller160/ajax-api/test-utils';
