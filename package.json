@@ -37,17 +37,10 @@
     "fp-ts": "^2.9.3",
     "@craigmiller160/ajax-api": "2.2.1"
   },
-  "pnpm": {
-    "peerDependencyRules": {
-      "ignoreMissing": [
-        "jest"
-      ]
-    }
-  },
   "devDependencies": {
     "axios-mock-adapter": "^1.21.5",
     "cross-env": "^7.0.3",
-    "fp-ts": "^2.9.3",
-    "@craigmiller160/js-config": "1.0.13"
+    "fp-ts": "^2.16.1",
+    "@craigmiller160/js-config": "1.0.14"
   }
 }
