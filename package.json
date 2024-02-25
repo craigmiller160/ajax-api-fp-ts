@@ -30,11 +30,11 @@
     "*.ts": "craig-lint"
   },
   "dependencies": {
-    "@craigmiller160/ajax-api": "2.2.1",
+    "@craigmiller160/ajax-api": "2.2.2",
     "axios": "^1.4.0"
   },
   "peerDependencies": {
-    "@craigmiller160/ajax-api": "2.2.1",
+    "@craigmiller160/ajax-api": "2.2.2",
     "axios": "^1.4.0",
     "fp-ts": "^2.9.3"
   },
