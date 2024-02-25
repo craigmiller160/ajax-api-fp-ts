@@ -23,6 +23,7 @@
     ".yalc"
   ],
   "scripts": {
+    "build": "c-validate && c-build-lib",
     "postinstall": "c-init node"
   },
   "lint-staged": {
